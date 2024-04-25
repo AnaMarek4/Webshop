@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Game Store</title>
+    <link rel="stylesheet" type="text/css" href="..\style\style.css">
+  </head>
+  
+  <header>
+    <img  class = "logo" src="..\images\logo.png" alt="logo">
+    <img class ="name" src="..\images\name.png" alt="name">
+    <div class="buttons-container">
+      <button class="register-button">Register </button>
+      <button id="login-logout-button" class="login-button">Log in </button>
+      <button class="cart-button">Cart <span class="cart-badge">0</span></button>
+    </div>
+
+  </header>
+
+  <body>
+
+    <nav>
+      <div class="main">
+        <a href="store.html">STORE</a>
+        <a href="review.html">REVIEW</a>
+        <a href="" class="main-active">ABOUT </a>
+      </div>
+    </nav>
+
+    <div class="about-container">
+      <div class="about-text"><p>This store is designed to provide players around the world with the most popular video games 
+        in a quick and easy way. <br><br>On our platform players can describe and rate the game, our work and thus help others to choose.<br><br>
+        We encourage our users to leave their honest review to enable our community to grow and develop. </p>
+      </div>
+      
+      <img  class = "about-img" src="..\images\about-img.png" alt="about-img">
+    </div>
+
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-cart">&times;</span>
+        <h1>Cart</h1>
+        <ul class="cart-items"></ul>
+        <p>Total: <span class="cart-total">$0.00</span></p>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+    <div id="register-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-register">&times;</span>
+        <h1>Register</h1>
+        <form id="register-form">
+
+          <div class="form-group">
+            <label for="register-username">Username:</label>
+            <input type="username" id="register-username" required>
+          </div>
+
+          <div class="form-group">
+            <label for="register-email">Email:</label>
+            <input type="email" id="register-email" required>
+          </div>
+                
+          <div class="form-group">
+            <label for="register-password">Password:</label>
+            <input type="password" id="register-password" name="password" required>
+
+            <p id="password-message" class="error-message"></p> 
+          </div>
+     
+          <button type="submit" class="register-submit-button">Register</button>
+          <p id="registration-submit-message" class="error-message"></p> 
+
+        </form>
+      </div>
+    </div>
+
+    <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-login">&times;</span>
+        <h1>Login</h1>
+        <form id="login-form">
+
+          <div class="form-group">
+            <label for="login-email">Username: </label>
+            <input id="login-email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="login-password">Password: </label>
+            <input type="password" id="login-password" name="password" required>
+          </div>
+          
+          <button type="submit" class="login-submit-button">Login</button>
+          <p id="login-submit-message" class="error-message"></p> 
+
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="..\index.js"></script>
+    
+    <script src="..\script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+
+  </body>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="web_project-0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web_project_backend/target/web_project-0.0.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
